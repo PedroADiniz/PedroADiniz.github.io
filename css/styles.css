@@ -153,11 +153,85 @@
   background-color: transparent;
 }
 
-#skills-section-title {
+.section-title {
   border-top: 1px solid var(--border-color);
   padding-top: 20px;
   margin-bottom: 20px;
   font-size: 32px;
+  scroll-margin-top: 20px;
+}
+
+/* O que já entreguei */
+#delivered-list {
+  max-width: 75%;
+  margin: 0 0 35px 20px;
+  line-height: 26px;
+}
+
+#delivered-list li {
+  margin-bottom: 10px;
+}
+
+/* Projetos */
+.project-card {
+  display: flex;
+  gap: 25px;
+  background-color: var(--bio-bg-color);
+  border: 1px solid var(--bio-border-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 35px;
+  max-width: 90%;
+}
+
+.project-image {
+  width: 45%;
+  border-radius: 6px;
+  border: 1px solid var(--bio-border-color);
+  object-fit: cover;
+}
+
+.project-info h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  margin-bottom: 12px;
+  line-height: 24px;
+}
+
+.project-stack {
+  color: var(--main-color);
+  font-size: 14px;
+}
+
+.project-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--main-text-color);
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  padding: 8px 14px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.project-links a:hover {
+  background-color: var(--main-color);
+}
+
+/* Ícones escuros ficam claros no fundo escuro */
+.skills-box i.invert {
+  color: var(--main-text-color);
 }
 
 #skills-container {
@@ -220,6 +294,21 @@
 
   #btn-projects {
     margin: 20px auto;
+  }
+
+  #delivered-list {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .project-card {
+    flex-direction: column;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .project-image {
+    width: 100%;
   }
 
   .skills-box {

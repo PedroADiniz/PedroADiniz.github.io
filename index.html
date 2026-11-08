@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio Pedro Arthur Diniz</title>
+  <title>Pedro Arthur Diniz | Desenvolvedor Full Stack</title>
+  <meta name="description" content="Pedro Arthur Diniz, Desenvolvedor Full Stack (Node.js, TypeScript, React, Next.js, PHP/Laravel). Sistemas fiscais e de faturamento em produção com mais de 50 mil documentos por mês.">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap" rel="stylesheet">
   <!-- Dev Icon Fonts -->
@@ -15,55 +16,83 @@
   <main id="container">
     <aside id="bio-container">
       <h2>Pedro Arthur Diniz</h2>
-      <img id="bio-image" src="img/profile.png" alt="Pedro Arthur Diniz">
-      <p>Olá, meu nome é Pedro Arthur Diniz e sou <span class="highlight">Desenvolvedor FullStack</span>.</p>
+      <img id="bio-image" src="img/profile.png" alt="Foto de Pedro Arthur Diniz">
+      <p>Olá, meu nome é Pedro Arthur Diniz e sou <span class="highlight">Desenvolvedor Full Stack</span>.</p>
       <p id="welcome-text">Seja bem-vindo!</p>
       <ul id="social-container">
-        <li><a href="#" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
-        <li><a href="#" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-        <li><a href="#" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="https://www.linkedin.com/in/pedro-arthur-diniz" target="_blank" rel="noopener" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href="https://github.com/PedroADiniz" target="_blank" rel="noopener" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a></li>
       </ul>
       <div id="email-container">
-        <ion-icon name="mail-outline"></ion-icon><a href="mailto:pedro@horadecodar.com.br">arthur2024diniz55@gmail.com</a>
+        <ion-icon name="mail-outline"></ion-icon><a href="mailto:arthur2014diniz55@gmail.com">arthur2014diniz55@gmail.com</a>
       </div>
     </aside>
     <section id="about-container">
       <h1 id="name">Pedro Arthur Diniz</h1>
-      <p id="title"><span class="highlight">Desenvolvedor FullStack</span></p>
-      <p class="description">Sou um desenvolvedor especializado em ERP, gosto de participar do projeto desde a <span class="highlight">definição das regras de negócio e levantamento de requisito</span> até o <span class="highlight">deploy da aplicação</span>.</p>
-      <p class="description">Atuo tanto no <span class="highlight">front</span> como no <span class="highlight">back-end</span>, e amo tecnologia, estudo todos os dias para me tornar cada vez melhor e escrever código de qualidade.</p>
-      <a href="#" id="btn-projects"><ion-icon name="share-social-outline"></ion-icon> <span>Ver Projetos</span></a>
-      <h2 id="skills-section-title">Minhas Skills</h2>
+      <p id="title"><span class="highlight">Desenvolvedor Full Stack</span></p>
+      <p class="description">Desenvolvo sistemas que precisam estar certos: <span class="highlight">notas fiscais, faturamento e pagamentos</span> de um provedor de internet, rodando em produção com <span class="highlight">mais de 50 mil documentos por mês</span>.</p>
+      <p class="description">Atuo do banco de dados à interface, com <span class="highlight">Node.js, TypeScript, React e Next.js</span> nos projetos novos e <span class="highlight">PHP/Laravel</span> no ERP. Gosto de participar desde a definição das regras de negócio até o deploy da aplicação.</p>
+      <a href="#projetos" id="btn-projects"><ion-icon name="share-social-outline"></ion-icon> <span>Ver Projetos</span></a>
+
+      <h2 class="section-title">O que já entreguei</h2>
+      <ul id="delivered-list">
+        <li><span class="highlight">NFS-e Nacional em PHP:</span> módulo que emite mais de 50 mil notas por mês, com assinatura digital do XML (certificado A1), integração REST com a API fiscal e emissão automática agendada.</li>
+        <li><span class="highlight">NFCom em Node.js:</span> evolução do microsserviço que emite mais de 50 mil notas por mês, com gerador de DANFE e cálculo de PIS/COFINS, CBS e IBS.</li>
+        <li><span class="highlight">Faturamento de ERP:</span> regras de um ERP que gera mais de 50 mil faturas por mês (juros, multa, dias proporcionais e boletos).</li>
+        <li><span class="highlight">Portal de vagas de emprego:</span> construído desde o início, do front-end em Next.js ao back-end em Node.js com Clean Architecture.</li>
+      </ul>
+
+      <h2 class="section-title" id="projetos">Projetos</h2>
+      <div class="project-card">
+        <img src="img/nba-statics-h2h.png" alt="Tela de análise H2H do NBA Statics" class="project-image">
+        <div class="project-info">
+          <h3>NBA Statics</h3>
+          <p>Estatísticas da NBA com dados ao vivo: confrontos H2H entre times, elencos, perfil de jogadores e agenda de jogos.</p>
+          <p class="project-stack">Node.js · TypeScript · Express.js · Prisma · Clean Architecture · Next.js 14 · React · Tailwind CSS · Docker</p>
+          <div class="project-links">
+            <a href="https://github.com/PedroADiniz/nba-statics-api" target="_blank" rel="noopener"><ion-icon name="logo-github"></ion-icon> API</a>
+            <a href="https://github.com/PedroADiniz/nba-statics-front" target="_blank" rel="noopener"><ion-icon name="logo-github"></ion-icon> Front-end</a>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title">Minhas Skills</h2>
       <p class="description">Conheça as tecnologias que domino:</p>
       <div id="skills-container">
         <div class="skills-box">
           <p class="skills-title">Front-end</p>
-          <i class="devicon-html5-plain colored"></i>
-          <i class="devicon-css3-plain colored"></i>
-          <i class="devicon-javascript-plain colored"></i>
+          <i class="devicon-html5-plain colored" title="HTML"></i>
+          <i class="devicon-css3-plain colored" title="CSS"></i>
+          <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+          <i class="devicon-typescript-plain colored" title="TypeScript"></i>
         </div>
         <div class="skills-box">
           <p class="skills-title">Back-end</p>
-          <i class="devicon-php-plain colored"></i>
-          <i class="devicon-nodejs-plain colored"></i>
+          <i class="devicon-php-plain colored" title="PHP"></i>
+          <i class="devicon-nodejs-plain colored" title="Node.js"></i>
         </div>
         <div class="skills-box">
-          <p class="skills-title">Databases</p>
-          <i class="devicon-mysql-plain colored"></i>
+          <p class="skills-title">Bancos de dados</p>
+          <i class="devicon-mysql-plain colored" title="MySQL"></i>
+          <i class="devicon-prisma-original invert" title="Prisma"></i>
         </div>
         <div class="skills-box">
           <p class="skills-title">Front-end Frameworks</p>
-          <i class="devicon-react-plain colored"></i>
-          <i class="devicon-vuejs-plain colored"></i>
+          <i class="devicon-react-original colored" title="React"></i>
+          <i class="devicon-nextjs-plain invert" title="Next.js"></i>
+          <i class="devicon-tailwindcss-original colored" title="Tailwind CSS"></i>
         </div>
         <div class="skills-box">
           <p class="skills-title">Back-end Frameworks</p>
-          <i class="devicon-laravel-plain colored"></i>
+          <i class="devicon-laravel-plain colored" title="Laravel"></i>
+          <i class="devicon-express-original invert" title="Express.js"></i>
         </div>
         <div class="skills-box">
-          <p class="skills-title">Tools</p>
-          <i class="devicon-linux-plain colored"></i>
-          <i class="devicon-docker-plain colored"></i>
+          <p class="skills-title">Ferramentas</p>
+          <i class="devicon-linux-plain colored" title="Linux"></i>
+          <i class="devicon-docker-plain colored" title="Docker"></i>
+          <i class="devicon-kubernetes-plain colored" title="Kubernetes"></i>
+          <i class="devicon-git-plain colored" title="Git"></i>
         </div>
       </div>
     </section>
